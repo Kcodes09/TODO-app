@@ -160,7 +160,7 @@ export default function ActiveTasks() {
   }}
   className="bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700"
 >
-  Done
+<CheckCircleIcon className="w-5 h-5" /> 
 </button>
 
                     <button
@@ -170,7 +170,7 @@ export default function ActiveTasks() {
   }}
   className="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700"
 >
-  Delete
+ <TrashIcon className="w-5 h-5" />
 </button>
 
                   </td>
