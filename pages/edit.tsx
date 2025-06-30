@@ -158,7 +158,7 @@ export default function ActiveTasks() {
     markCompleted(task.id);
     alert("TODO marked as completed! ✅"); // ✅ alert after marking done
   }}
-  className="bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700"
+  className="bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700 flex items-center justify-center"
 >
 <CheckCircleIcon className="w-5 h-5" /> 
 </button>
@@ -168,7 +168,7 @@ export default function ActiveTasks() {
     deleteTask(task.id);
     alert("TODO deleted successfully! 🗑️"); // ✅ alert after delete
   }}
-  className="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700"
+  className="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700 flex items-center justify-center"
 >
  <TrashIcon className="w-5 h-5" />
 </button>
