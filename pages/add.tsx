@@ -14,17 +14,19 @@ export default function Home() {
   });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const start = new Date(newTask.startDate);
-    const due = new Date(newTask.dueDate);
-    if (due < start) {
-      alert("Error: Due date cannot be earlier than start date!");
-      return;
-    }
-    if (!newTask.title.trim()) return;
-    addTask({ ...newTask, id: uuidv4(), completed: false });
-    setNewTask({ title: "", startDate: "", dueDate: "", type: "", priority: "" });
-  };
+  e.preventDefault();
+  const start = new Date(newTask.startDate);
+  const due = new Date(newTask.dueDate);
+  if (due < start) {
+    alert("Error: Due date cannot be earlier than start date!");
+    return;
+  }
+  if (!newTask.title.trim()) return;
+  addTask({ ...newTask, id: uuidv4(), completed: false });
+  alert("New TODO added successfully! ✅"); // ✅ alert after adding
+  setNewTask({ title: "", startDate: "", dueDate: "", type: "", priority: "" });
+};
+
 
   return (
     <div className="bg-white rounded shadow p-4 sm:p-6 w-full max-w-3xl mx-auto">
