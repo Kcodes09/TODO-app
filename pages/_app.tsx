@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <TaskProvider>
       <Head>
         <title>TODO App</title>
-        <link rel="icon" type="image/svg+xml" href="/file.svg" />
+        <link rel="icon" type="image/svg+xml" href="/Favicon.svg" />
       </Head>
       <div className="min-h-screen bg-gray-100 text-black">
         <Header />
