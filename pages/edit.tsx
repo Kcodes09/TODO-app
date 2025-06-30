@@ -10,17 +10,19 @@ export default function ActiveTasks() {
   const [editedTask, setEditedTask] = useState<Partial<Task> | null>(null);
 
   const handleSave = () => {
-    if (!editedTask) return;
-    const start = new Date(editedTask.startDate!);
-    const due = new Date(editedTask.dueDate!);
-    if (due < start) {
-      alert("Error: Due date cannot be earlier than start date!");
-      return;
-    }
-    updateTask(editedTask as Task);
-    setEditingTaskId(null);
-    setEditedTask(null);
-  };
+  if (!editedTask) return;
+  const start = new Date(editedTask.startDate!);
+  const due = new Date(editedTask.dueDate!);
+  if (due < start) {
+    alert("Error: Due date cannot be earlier than start date!");
+    return;
+  }
+  updateTask(editedTask as Task);
+  alert("TODO updated successfully! ✏️"); // ✅ alert after edit
+  setEditingTaskId(null);
+  setEditedTask(null);
+};
+
 
   return (
     <div className="bg-white rounded shadow p-4 sm:p-6 w-full overflow-x-auto">
