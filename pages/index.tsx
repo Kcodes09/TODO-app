@@ -9,7 +9,7 @@ export default function Home() {
   const completedCount = tasks.filter((task) => task.completed).length;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="items-center justify-center min-h-screen bg-gray-100 p-4">
       <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-black text-center">
         📋 TODO Dashboard
       </h1>
