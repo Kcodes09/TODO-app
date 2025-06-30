@@ -154,19 +154,25 @@ export default function ActiveTasks() {
                       </button>
                     )}
                     <button
-                      onClick={() => markCompleted(task.id)}
-                      className="bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700 flex items-center justify-center"
-                      title="Mark Done"
-                    >
-                      <CheckCircleIcon className="w-5 h-5" />
-                    </button>
+  onClick={() => {
+    markCompleted(task.id);
+    alert("TODO marked as completed! ✅"); // ✅ alert after marking done
+  }}
+  className="bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700"
+>
+  Done
+</button>
+
                     <button
-                      onClick={() => deleteTask(task.id)}
-                      className="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700 flex items-center justify-center"
-                      title="Delete"
-                    >
-                      <TrashIcon className="w-5 h-5" />
-                    </button>
+  onClick={() => {
+    deleteTask(task.id);
+    alert("TODO deleted successfully! 🗑️"); // ✅ alert after delete
+  }}
+  className="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700"
+>
+  Delete
+</button>
+
                   </td>
                 </tr>
               );
