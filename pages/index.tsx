@@ -23,7 +23,7 @@ export default function Home() {
           href="/edit"
           className="block bg-yellow-600 text-white text-center py-3 rounded hover:bg-yellow-700 font-semibold"
         >
-          ✏️ Active TODOs
+          ✏️ Edit TODOs
         </Link>
         <Link
           href="/completed"
