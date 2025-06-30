@@ -15,7 +15,7 @@ export default function Header() {
         <nav className="flex gap-6 text-lg">
           <Link href="/add" className={linkClasses("/add")}>Home</Link>
           <Link href="/view" className={linkClasses("/view")}>View TODOs</Link>
-          <Link href="/active" className={linkClasses("/edit")}>Edit TODOs</Link>
+          <Link href="/edit" className={linkClasses("/edit")}>Edit TODOs</Link>
           <Link href="/completed" className={linkClasses("/completed")}>Completed TODOs</Link>
         </nav>
       </div>
