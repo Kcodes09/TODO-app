@@ -13,7 +13,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-4">
         <h1 className="text-2xl font-bold">📋 TODO App</h1>
         <nav className="flex gap-6 text-lg">
-          <Link href="/add" className={linkClasses("/add")}>Home</Link>
+          <Link href="/" className={linkClasses("/")}>Home</Link>
           <Link href="/view" className={linkClasses("/view")}>View TODOs</Link>
           <Link href="/edit" className={linkClasses("/edit")}>Edit TODOs</Link>
           <Link href="/completed" className={linkClasses("/completed")}>Completed TODOs</Link>
