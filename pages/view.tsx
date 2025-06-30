@@ -8,7 +8,7 @@ export default function ViewTodos() {
     <div className="bg-white rounded shadow p-4 sm:p-6 w-full overflow-x-auto">
       <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-black">View TODOs </h1>
       {activeTasks.length === 0 ? (
-        <p className="text-gray-800">No active TODOs found.</p>
+        <p className="text-gray-800">No TODOs added.</p>
       ) : (
         <table className="min-w-[600px] w-full border text-sm sm:text-base">
           <thead>
