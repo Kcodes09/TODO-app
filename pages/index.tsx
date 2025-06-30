@@ -32,17 +32,17 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="grid gap-4 w-full max-w-sm mt-8">
+        <div className="flex flex-col sm:flex-row gap-4 w-full max-w-sm mt-8">
           <Link
             href="/add"
-            className="flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded hover:bg-green-700 font-semibold"
+            className="flex flex-1 items-center justify-center gap-2 bg-green-600 text-white py-3 rounded hover:bg-green-700 font-semibold"
           >
             <PlusCircleIcon className="w-5 h-5" />
             Add TODO
           </Link>
           <Link
             href="/edit"
-            className="flex items-center justify-center gap-2 bg-yellow-600 text-white py-3 rounded hover:bg-yellow-700 font-semibold"
+            className="flex flex-1 items-center justify-center gap-2 bg-yellow-600 text-white py-3 rounded hover:bg-yellow-700 font-semibold"
           >
             <PencilSquareIcon className="w-5 h-5" />
             Edit TODOs
