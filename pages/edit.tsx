@@ -24,9 +24,9 @@ export default function ActiveTasks() {
 
   return (
     <div className="bg-white rounded shadow p-4 sm:p-6 w-full overflow-x-auto">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-black">Active TODOs</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-black">Edit TODOs</h1>
       {activeTasks.length === 0 ? (
-        <p className="text-gray-800">No active TODOs.</p>
+        <p className="text-gray-800">No TODOs added.</p>
       ) : (
         <table className="min-w-[700px] w-full border text-sm sm:text-base">
           <thead>
