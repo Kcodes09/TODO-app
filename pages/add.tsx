@@ -89,7 +89,7 @@ export default function Home() {
   className="bg-green-600 text-white py-2 rounded hover:bg-green-700 w-full sm:w-auto flex items-center justify-center gap-2"
 >
   <PlusCircleIcon className="w-5 h-5" />
-  Add Task
+  Add TODO
 </button>
 
       </form>
